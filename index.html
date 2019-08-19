@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+    <header>
+        <h1>GraphPen - Stats</h1>
+    </header>
+    <main>
+        <div class="nav">
+            <header><div>Distributions</div></header>
+            <ul class="nav-dist">
+            </ul>
+        </div>
+        <div class="graphs">
+            <section class="g_section">
+                <header id="h_pdf">
+                    <div class="g_sec_name">PDF</div>
+                    <div class="g_sec_value">value</div>
+                </header>
+                <svg id="g_pdf">
+                    <g id="pdf"></g>
+                </svg>
+            </section>
+            <section class="g_section">
+                <header id="h_cdf">
+                    <div class="g_sec_name">CDF</div>
+                    <div class="g_sec_value">value</div>
+                </header>
+                <svg id="g_cdf">
+                    <g id="cdf"></g>
+                </svg>
+            </section>
+        </div>
+        <div class="info">
+            <header><div></div></header>
+            <table class="infobox">
+                <tbody>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Notation</th>
+                        <th>Current value</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Richard Yin</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.0.4/math.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/cauchy.js"></script>
+    <script src="js/gamma.js"></script>
+    <script src="js/laplace.js"></script>
+    <script src="js/normal.js"></script>
+    <script src="js/student_t.js"></script>
+    <script src="js/uniform.js"></script>
+    <script src="js/stats.js"></script>
+</body>
+</html>

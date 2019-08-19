@@ -1,0 +1,165 @@
+:root {
+    box-sizing: border-box;
+    font-size: 1em;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body > header {
+    padding: 0.2em 1.5em;
+    color: #fff;
+    background-color: #0072b0;
+}
+body > header h1 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+footer {
+    font-size: 0.8em;
+    color: #666;
+    background-color: #ccc;
+    padding: 0.2em 0;
+    text-align: center;
+}
+main {
+    display: flex;
+}
+.nav {
+    flex: 1;
+    background-color: #eee;
+}
+.nav header {
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: burlywood;
+    color: black;
+    margin: 0;
+    padding: 0 1em;
+}
+.nav header div {
+    margin: 0.5em;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.nav ul li {
+    padding: 0.25em;
+    font-size: 1em;
+    color: #0645AD;
+}
+.graphs {
+    flex: 3;
+    background-color: #fff;
+}
+.info {
+    flex: 2;
+    background-color: #eee;
+    padding: 0;
+}
+.info header {
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: cornsilk;
+    color: black;
+}
+.info header div {
+    margin: 0.5em;
+}
+.info .infobox {
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+    width: 100%;
+    display: table;
+    font-size: 1em;
+}
+.info .infobox tr {
+    display: table-row;
+}
+.info .infobox th, .info .infobox td {
+    border: 1px solid #a2a9b1;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+    padding: 0.2em;
+}
+.info .infobox th, .info .infobox td p {
+    margin: 0.25em 0;
+}
+.graphs section {
+    margin: 0;
+    padding: 0;
+}
+.g_section header {
+    display: flex;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: bisque;
+    color: black;
+}
+.g_section header .g_sec_name {
+    margin: 0.5em;
+}
+.g_section header .g_sec_value {
+    margin-left: auto;
+    margin-right: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.g_section header::after {
+    clear: both;
+}
+.g_section svg {
+    width: 100%;
+    height: 350px;
+}
+.g_section svg .grid {
+    stroke: black;
+    fill: black;
+    opacity: 0.1;
+}
+.g_section svg .axis path {
+    stroke: black;
+    fill: black;
+    opacity: 0.8;
+}
+.g_section svg .axis text {
+    font-size: 0.6em;
+    font-weight: normal;
+    fill: black;
+    opacity: 0.8;
+}
+.g_section svg .axis-x text {
+    text-anchor: middle;
+    alignment-baseline: hanging;
+}
+.g_section svg .axis-y text {
+    text-align: right;
+    text-anchor: end;
+    alignment-baseline: baseline;
+}
+.g_section svg .func {
+    stroke: blue;
+    fill: none;
+    opacity: 1;
+}
+.g_section svg circle.graph_value {
+    fill: brown;
+}
+.g_sec_input {
+    text-align: right;
+}
+#btnParameters {
+    margin-left: 0.5em;
+    background-color: cornsilk;
+    font-weight: bold;
+}
